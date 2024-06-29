@@ -1,6 +1,6 @@
 [submodule "binutils"]
 	path = binutils
-	url = https://sourceware.org/git/binutils-gdb.git
+	url = https://github.com/artlands/binutils-gdb-xbgas.git
 	branch = binutils-2_42-branch
 [submodule "gcc"]
 	path = gcc
