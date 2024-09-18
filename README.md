@@ -105,6 +105,9 @@ The musl compiler (riscv64-unknown-linux-musl-) will only be able to target
 The `--enable-multilib` flag therefore does not actually enable multilib support
 for musl libc.
 
+Linux toolchain has an additional option `--enable-default-pie` to control the
+default PIE enablement for GCC, which is disable by default.
+
 ### Troubleshooting Build Problems
 
 Builds work best if installing into an empty directory.  If you build a
@@ -137,7 +140,7 @@ devtoolset-7 works.
 There are a number of additional options that may be passed to
 configure.  See './configure --help' for more details.
 
-Also you can define extra flags to pass to specific projects: ```BINUTILS_NATIVE_FLAGS_EXTRA, BINUTILS_TARGET_FLAGS_EXTRA, GCC_EXTRA_CONFIGURE_FLAGS, GDB_NATIVE_FLAGS_EXTRA, GDB_TARGET_FLAGS_EXTRA, GLIBC_NATIVE_FLAGS_EXTRA, GLIBC_TARGET_FLAGS_EXTRA```.
+Also you can define extra flags to pass to specific projects: ```BINUTILS_NATIVE_FLAGS_EXTRA, BINUTILS_TARGET_FLAGS_EXTRA, GCC_EXTRA_CONFIGURE_FLAGS, GDB_NATIVE_FLAGS_EXTRA, GDB_TARGET_FLAGS_EXTRA, GLIBC_TARGET_FLAGS_EXTRA, NEWLIB_TARGET_FLAGS_EXTRA```.
 Example: ```GCC_EXTRA_CONFIGURE_FLAGS=--with-gmp=/opt/gmp make linux```
 
 #### Set default ISA spec version
