@@ -1,7 +1,7 @@
 [submodule "binutils"]
 	path = binutils
-	url = https://github.com/artlands/binutils-gdb-xbgas.git
-	branch = binutils-2_43-branch-xbgas
+	url = https://github.com/artlands/binutils-gdb.git
+	branch = binutils-2_43-branch
 [submodule "gcc"]
 	path = gcc
 	url = https://gcc.gnu.org/git/gcc.git
@@ -19,8 +19,8 @@
 	branch = master
 [submodule "gdb"]
 	path = gdb
-	url = https://github.com/artlands/binutils-gdb-xbgas.git
-	branch = gdb-15-branch-xbgas
+	url = https://github.com/artlands/binutils-gdb.git
+	branch = gdb-15-branch
 [submodule "qemu"]
 	path = qemu
 	url = https://gitlab.com/qemu-project/qemu.git
